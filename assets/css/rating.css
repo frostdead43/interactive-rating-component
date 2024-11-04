@@ -153,3 +153,22 @@ margin-block: 24px;
 .container-submit img {
   margin: 34px auto;
 }
+
+
+@media (width >= 768px) {
+  .point-area button:hover{
+    background-color: rgba(252, 118, 20, 1);
+    color: rgba(38, 46, 56, 1);
+  }
+  
+  .point-area button:active, .point-area button:focus {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(38, 46, 56, 1);
+  }
+
+  .submit-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+}
+
