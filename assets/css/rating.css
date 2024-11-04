@@ -1,0 +1,155 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  background-color:rgba(19, 21, 24, 1);
+  font-family: "Overpass", sans-serif;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+ul ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 375px;
+  margin-top: 13%;
+  margin-inline: auto;
+}
+
+.container-inner {
+  padding: 24px;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  margin-inline: 24px;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.star {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(38, 46, 56, 1);
+  border-radius: 50%;
+  position: relative;
+}
+
+.star img {
+  position: absolute;
+  top:33%;
+  left:33%;
+}
+
+h2 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.38px;
+  margin-block: 16px 10px;
+}
+
+
+p {
+color:rgba(150, 159, 173, 1);
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+margin-bottom: 24px;
+}
+
+.point-area {
+  display: flex;
+  gap: 17px
+}
+
+.point-area button {
+  background-color:rgba(38, 46, 56, 1);
+  color: rgba(150, 159, 173, 1);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.17499999701976776px;
+  text-align: center;
+  border: none;
+}
+
+.submit-btn {
+  background: rgba(252, 118, 20, 1);
+  width: 279px;
+  border-radius: 22.5px;
+  margin-top: 24px;
+  border: none;
+  padding-block: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.72px;
+  letter-spacing: 1.8666666746139526px;
+}
+
+
+/* second container */
+
+.container-submit {
+  text-align: center;
+  display: none;
+}
+
+.container-submit h5 {
+color: rgba(252, 118, 20, 1);
+background-color: rgba(38, 46, 56, 1);
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+padding: 5px 12px;
+border-radius: 22.5px;
+margin-block: 24px;
+}
+
+.container-submit img {
+  margin: 34px auto;
+}
